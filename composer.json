@@ -1,0 +1,44 @@
+{
+    "name": "flamarkt/matomo",
+    "description": "Connect Flarum with Matomo analytics",
+    "keywords": [
+        "flarum"
+    ],
+    "type": "flarum-extension",
+    "license": "MIT",
+    "require": {
+        "flarum/core": "^0.1.0-beta.16",
+        "ext-json": "*"
+    },
+    "authors": [
+        {
+            "name": "Flamarkt",
+            "homepage": "https://flamarkt.org/"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/flamarkt/matomo/issues",
+        "source": "https://github.com/flamarkt/matomo"
+    },
+    "autoload": {
+        "psr-4": {
+            "Flamarkt\\Matomo\\": "src/"
+        }
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "Matomo",
+            "icon": {
+                "name": "fas fa-chart-line",
+                "backgroundColor": "#266a13",
+                "color": "#fff"
+            },
+            "optional-dependencies": [
+                "flamarkt/core"
+            ]
+        },
+        "flamarkt-backoffice": {
+            "showInBackoffice": true
+        }
+    }
+}
