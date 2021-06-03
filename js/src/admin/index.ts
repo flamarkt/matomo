@@ -1,6 +1,6 @@
+import app from 'flarum/admin/app';
+import ExtensionPage from 'flarum/admin/components/ExtensionPage';
 import Select from 'flarum/common/components/Select';
-
-/* global app, m */
 
 app.initializers.add('flamarkt-matomo', () => {
     app.extensionData.for('flamarkt-matomo')
@@ -12,7 +12,7 @@ app.initializers.add('flamarkt-matomo', () => {
             setting: 'flamarkt-matomo.siteId',
             label: app.translator.trans('flamarkt-matomo.admin.settings.siteId'),
         })
-        .registerSetting(function () {
+        .registerSetting(function (this: ExtensionPage) {
             const trackAccountsSetting = this.setting('flamarkt-matomo.trackAccounts');
 
             if (!trackAccountsSetting()) {
