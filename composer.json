@@ -18,7 +18,8 @@
     ],
     "support": {
         "issues": "https://github.com/flamarkt/matomo/issues",
-        "source": "https://github.com/flamarkt/matomo"
+        "source": "https://github.com/flamarkt/matomo",
+        "forum": "https://discuss.flarum.org/d/30500"
     },
     "autoload": {
         "psr-4": {
