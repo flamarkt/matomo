@@ -10,7 +10,7 @@ This extension will follow the future Flamarkt release cycles with possibly a fe
 While this extension probably won't experience any significant change, manual operations might still be required between major versions.
 For this reason I recommend using the `^` requirement (that's what the command below will use) and not `*`, so you don't accidentally update without reading this README in the future.
 
-    composer require flamarkt/taxonomies
+    composer require flamarkt/matomo
 
 ## Features
 
